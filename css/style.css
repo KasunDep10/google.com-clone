@@ -219,3 +219,145 @@ main > div:last-child a:hover {
 
 
 
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#footer-content {
+    position: relative;
+    font-size: 14px;
+    bottom: 0;
+}
+
+#footer-content > :first-child {
+    font-size: 15px;
+    background-color: #eff2f3;
+    color: #70757A;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+#footer-content > :last-child {
+    display: flex;
+    background-color: #eff2f3;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    padding: 0 20px;
+}
+
+#footer-content > :last-child > :last-child {
+    display: flex;
+}
+
+
+#footer-content a {
+    text-decoration: none;
+    color: #70757A;
+    padding: 15px;
+}
+
+#footer-content a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#settings {
+    color: #70757A;
+    padding: 15px;
+    float: right;
+}
+
+#settings:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#settings:hover menu {
+    display: block;
+}
+
+#settings > menu {
+    position: absolute;
+    display: none;
+    bottom: 50%;
+    right: 1%;
+    width: 180px;
+    background-color: #FFFFFF;
+}
+
+#settings a {
+    font-size: 14px;
+    color: #202124;
+}
+
+#settings a:hover {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#settings li{
+    list-style: none;
+    padding: 10px 10px;
+}
+
+#settings li:hover{
+    background-color: #dadce0;
+}
+
+#theme {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 8px 0;
+    height: 36px;
+    border-top: 1px solid #dadce0;
+}
+
+#theme > svg {
+    width: 20px;
+    height: 20px;
+    fill: #a6a7a9;
+    display: none;
+}
+
+#theme:hover > svg {
+    display: block;
+
+}
+
+@media all and (max-width: 1200px) {
+    #footer-content > :last-child {
+        justify-content: space-around;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    #footer-content > :last-child {
+        display: flex;
+        background-color: #eff2f3;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        height: 100px;
+        padding: 20px 20px;
+    }
+
+    #settings > menu {
+        position: absolute;
+        display: none;
+        bottom: 30%;
+        right: 20%;
+        width: 180px;
+        background-color: #FFFFFF;
+    }
+}
+
+
+
